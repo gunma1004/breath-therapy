@@ -128,3 +128,14 @@ with open(f"{OUTPUT_DIR}/sitemap.xml", "w", encoding="utf-8") as f:
     f.write(sitemap_content)
 
 print(f"✅ 총 {len(sitemap_urls)}개의 HTML 파일과 sitemap.xml이 '{OUTPUT_DIR}' 폴더에 성공적으로 생성되었습니다.")
+# 6. robots.txt 자동 생성
+robots_content = f"""User-agent: *
+Allow: /
+
+Sitemap: {DOMAIN}/sitemap.xml
+"""
+
+with open(f"{OUTPUT_DIR}/robots.txt", "w", encoding="utf-8") as f:
+    f.write(robots_content)
+
+print(f"✅ 총 {len(sitemap_urls)}개의 HTML 파일과 sitemap.xml, robots.txt가 '{OUTPUT_DIR}' 폴더에 성공적으로 생성되었습니다.")
