@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./seo.js"></script>
+    <script>
+        initSEO({
+            title: "숨결테라피 - 스웨디시·아로마·타이 전국 지역별 검색",
+            description: "숨결테라피에서 스웨디시, 아로마, 타이 테라피 샵을 전국 지역별로 검색해보세요. 상세 정보와 이용 후기를 확인할 수 있습니다.",
+            url: "https://breath-therapy.netlify.app",
+            jsonLd: {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "숨결테라피",
+                "url": "https://breath-therapy.netlify.app"
+            }
+        });
+    </script>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        header, main, footer { max-width: 800px; margin: auto; }
+        a { text-decoration: none; color: #000080; }
+        .shop-list li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/">숨결테라피</a></h1>
+        <p>스웨디시, 아로마, 타이 마사지샵 추천과 전국 지역별 검색</p>
+    </header>
+    <main>
+        <section>
+            <h2>지역별 마사지샵 검색</h2>
+            <ul>
+                <li><a href="region.html?region=gangnam">서울 강남구</a></li>
+                <li><a href="region.html?region=seocho">서울 서초구</a></li>
+                <li><a href="region.html?region=busan">부산광역시</a></li>
+                <li><a href="region.html?region=suwon">경기 수원</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>가장 주목 받는 테라피샵</h2>
+            <ul class="shop-list">
+                <li><a href="shop.html?shop=queens"><strong>퀸즈홈테라피</strong></a> (0507-1280-3296)</li>
+                <li><a href="shop.html?shop=korean_beauty"><strong>한국미인테라피</strong></a> (0507-1280-3140)</li>
+                <li><a href="shop.html?shop=tonight"><strong>오늘밤테라피</strong></a> (0507-1280-3199)</li>
+                <li><a href="shop.html?shop=juju"><strong>주주테라피</strong></a> (0507-1280-3197)</li>
+                <li><a href="shop.html?shop=joy"><strong>기쁨테라피</strong></a> (0507-1280-3183)</li>
+                <li><a href="shop.html?shop=beauty_club"><strong>미인클럽테라피</strong></a> (0507-1280-3180)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><small>당사는 통신 판매 중개자로서 서비스 제공의 당사자가 아니며, 입점 업체가 등록한 콘텐츠에 대해서 일체 책임을 지지 않습니다.</small></p>
+        <p><small>COPYRIGHT breath-therapy.netlify.app ALL RIGHTS RESERVED.</small></p>
+    </footer>
+</body>
+</html>
